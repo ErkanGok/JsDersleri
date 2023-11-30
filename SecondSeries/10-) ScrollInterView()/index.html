@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>30DaysOfScript:Inline Script</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+        border: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        overflow-x: auto;
+        padding: 0 20px;
+        position: sticky;
+        background: #fff;
+        position: -webkit-sticky;
+        top: 0px;
+      }
+      
+      nav ul {
+        display: flex;
+        height: 60px;
+        align-items: center;
+      }
+      nav ul li {
+        padding: 0 20px;
+      }
+      nav ul li a {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 30px;
+        background: #eee;
+        color: #333;
+        white-space: nowrap;
+      }
+      nav ul li.active a{
+        background: lime;
+      }
+      #to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+      section {
+        height: 700px;
+        background: lime;
+        margin-bottom: 20px;
+        scroll-margin-top: 80px;
+      }
+    </style>
+  </head>   
+  <body>
+    <a href="#" id="to-top">Yukarı Çık</a>
+    <nav>
+      <ul>
+        <li class="active">
+          <a href = "#section1">Section 1</a>
+        </li>
+        <li>
+          <a href = "#section2">Section 2</a>
+        </li>
+        <li>
+          <a href = "#section3">Section 3</a>
+        </li>
+        <li>
+          <a href = "#section4">Section 4</a>
+        </li>
+        <li>
+          <a href = "#section5">Section 5</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="section1">Section 1</section>
+    <section id="section2">Section 2</section>
+    <section id="section3">Section 3</section>
+    <section id="section4">Section 4</section>
+    <section id="section5">Section 5</section>
+   
+    <script src="10.js"></script>
+  </body>
+</html>
